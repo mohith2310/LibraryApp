@@ -1,0 +1,47 @@
+<%= form_with(model: library) do |form| %>
+  <% if library.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(library.errors.count, "error") %> prohibited this library from being saved:</h2>
+
+      <ul>
+        <% library.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group mb-3">
+    <% form.label :Book_Id %>
+    <%= form.text_field :Book_Id,  class:"form-control",placeholder:"Id"%>
+  </div>
+
+  <div class="field form-group mb-3">
+    <% form.label :Book_Title %>
+    <%= form.text_field :Book_Title, class:"form-control",placeholder:"Title"%>
+  </div>
+
+  <div class="field form-group mb-3">
+    <% form.label :Book_Author %>
+    <%= form.text_field :Book_Author, class:"form-control",placeholder:"Author" %>
+  </div>
+
+  <div class="field form-group mb-3">
+    <% form.label :Book_Publisher %>
+    <%= form.text_field :Book_Publisher, class:"form-control",placeholder:"Publisher" %>
+  </div>
+
+  <div class="field form-group mb-3">
+    <%= form.label :year %>
+    <%= form.date_select :year, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.number_field :user_id, id: :library_user_id, class:"form-control", value: current_user.id, type: :hidden %>
+  </div>
+
+  <br>
+  <div class="actions">
+    <%= form.submit class:"btn btn-secondary"%>
+  </div>
+<% end %>

@@ -1,0 +1,8 @@
+<h1>Editing Library</h1>
+
+<%= render 'form', library: @library %>
+<br>
+
+<%= link_to 'Show', @library ,class:"btn btn-secondary"%>
+<%= link_to 'Delete', @library, method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-danger" %>
+<%= link_to 'Back', libraries_path,class:"btn btn-secondary" %>

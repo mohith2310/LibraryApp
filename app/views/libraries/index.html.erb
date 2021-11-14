@@ -1,0 +1,34 @@
+<% if user_signed_in? %>
+  <table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>Book id</th>
+        <th>Book title</th>
+        <th>Book author</th>
+        <th>Book publisher</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @libraries.each do |library| %>
+        <% if library.user == current_user %>
+        <tr>
+          <td><%= library.Book_Id %></td>
+          <td><%= link_to library.Book_Title, library %></td>
+          <td><%= library.Book_Author %></td>
+          <td><%= library.Book_Publisher %></td>
+          <td><%= library.year %></td>
+          <td><%= link_to 'Delete', library, method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-outline-danger btn-sm" %></td>
+        </tr>
+        <% end%>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Book', new_library_path ,class:"btn btn-secondary"%>
+<%else%>
+<p>Go sign up/in</p>
+<%end%>

@@ -1,0 +1,28 @@
+<p>
+  <strong>Book id:</strong>
+  <%= @library.Book_Id %>
+</p>
+
+<p>
+  <strong>Book title:</strong>
+  <%= @library.Book_Title %>
+</p>
+
+<p>
+  <strong>Book author:</strong>
+  <%= @library.Book_Author %>
+</p>
+
+<p>
+  <strong>Book publisher:</strong>
+  <%= @library.Book_Publisher %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @library.year %>
+</p>
+
+<%= link_to 'Edit', edit_library_path(@library),class:"btn btn-secondary" %>
+<%= link_to 'Delete', @library, method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-danger" %>
+<%= link_to 'Back', libraries_path,class:"btn btn-secondary" %>
