@@ -9472,3 +9472,218 @@ Processing by LibrariesController#index as HTML
 Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms | Allocations: 4512)
 
 
+Started GET "/" for ::1 at 2021-11-14 11:56:59 +0530
+  [1m[35m (39.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 62.5ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 37.3ms | Allocations: 569)
+  Rendered layout layouts/application.html.erb (Duration: 629.9ms | Allocations: 8903)
+Completed 200 OK in 946ms (Views: 735.7ms | ActiveRecord: 0.0ms | Allocations: 13739)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 11:57:11 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 60.4ms | Allocations: 681)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 814.5ms | Allocations: 5644)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 211)
+  Rendered layout layouts/application.html.erb (Duration: 857.2ms | Allocations: 9707)
+Completed 200 OK in 906ms (Views: 865.9ms | ActiveRecord: 0.7ms | Allocations: 16218)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-11-14 11:57:13 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 14.6ms | Allocations: 274)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 157)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 68.5ms | Allocations: 2130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 211)
+  Rendered layout layouts/application.html.erb (Duration: 118.0ms | Allocations: 6178)
+Completed 200 OK in 125ms (Views: 123.8ms | ActiveRecord: 0.0ms | Allocations: 7773)
+
+
+Started GET "/libraries/new" for ::1 at 2021-11-14 11:57:15 +0530
+Processing by LibrariesController#new as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 298)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 11:57:15 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 4888)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.0ms | Allocations: 5643)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-11-14 11:57:16 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 105)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1098)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 4930)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.0ms | Allocations: 5563)
+
+
+Started POST "/users" for ::1 at 2021-11-14 11:57:22 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"abc@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "abc@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (16.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "abc@gmail.com"], ["encrypted_password", "$2a$12$zbLgg5Ftt06Ccz/9ifPpCe7t8DKpNbYw4QdEUQfIvmf1KEEaIXtn2"], ["created_at", "2021-11-14 06:27:23.565638"], ["updated_at", "2021-11-14 06:27:23.565638"]]
+  [1m[36mTRANSACTION (71.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/libraries/new
+Completed 302 Found in 770ms (ActiveRecord: 89.1ms | Allocations: 9828)
+
+
+Started GET "/libraries/new" for ::1 at 2021-11-14 11:57:23 +0530
+Processing by LibrariesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/new.html.erb within layouts/application
+  Rendered libraries/_form.html.erb (Duration: 172.4ms | Allocations: 3598)
+  Rendered libraries/new.html.erb within layouts/application (Duration: 187.1ms | Allocations: 4008)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 157)
+  Rendered layouts/_alerts.html.erb (Duration: 17.9ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 271.5ms | Allocations: 8282)
+Completed 200 OK in 639ms (Views: 273.4ms | ActiveRecord: 1.0ms | Allocations: 18257)
+
+
+Started POST "/libraries" for ::1 at 2021-11-14 11:57:45 +0530
+Processing by LibrariesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "library"=>{"Book_Id"=>"1", "Book_Title"=>"asdfasdf", "Book_Author"=>"abc", "Book_Publisher"=>"xyz", "year(1i)"=>"2021", "year(2i)"=>"11", "year(3i)"=>"14", "user_id"=>"5"}, "commit"=>"Create Book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/libraries_controller.rb:30:in `block in create'
+  [1m[36mLibrary Create (1.0ms)[0m  [1m[32mINSERT INTO "libraries" ("Book_Id", "Book_Title", "Book_Author", "Book_Publisher", "year", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Book_Id", "1"], ["Book_Title", "asdfasdf"], ["Book_Author", "abc"], ["Book_Publisher", "xyz"], ["year", "2021-11-14"], ["created_at", "2021-11-14 06:27:45.882512"], ["updated_at", "2021-11-14 06:27:45.882512"], ["user_id", 5]]
+  ↳ app/controllers/libraries_controller.rb:30:in `block in create'
+  [1m[36mTRANSACTION (73.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/libraries_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/libraries/6
+Completed 302 Found in 161ms (ActiveRecord: 75.0ms | Allocations: 4640)
+
+
+Started GET "/libraries/6" for ::1 at 2021-11-14 11:57:46 +0530
+Processing by LibrariesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mLibrary Load (0.2ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/libraries_controller.rb:70:in `set_library'
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/show.html.erb within layouts/application
+  Rendered libraries/show.html.erb within layouts/application (Duration: 21.1ms | Allocations: 431)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:14
+  Rendered home/_header.html.erb (Duration: 3.5ms | Allocations: 1032)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 80.5ms | Allocations: 5196)
+Completed 200 OK in 89ms (Views: 81.7ms | ActiveRecord: 0.4ms | Allocations: 6625)
+
+
+Started GET "/libraries" for ::1 at 2021-11-14 11:57:49 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/libraries/index.html.erb:1
+  [1m[36mLibrary Load (0.3ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries"[0m
+  ↳ app/views/libraries/index.html.erb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/libraries/index.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/libraries/index.html.erb:15
+  Rendered libraries/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 3564)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 7331)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 1.0ms | Allocations: 7833)
+
+
+Started DELETE "/libraries/6" for ::1 at 2021-11-14 11:58:27 +0530
+Processing by LibrariesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mLibrary Load (0.2ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/libraries_controller.rb:70:in `set_library'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mLibrary Load (0.3ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ? AND "libraries"."id" = ? LIMIT ?[0m  [["user_id", 5], ["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/libraries_controller.rb:63:in `correct_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/libraries_controller.rb:55:in `destroy'
+  [1m[36mLibrary Destroy (12.8ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/libraries_controller.rb:55:in `destroy'
+  [1m[36mTRANSACTION (110.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/libraries_controller.rb:55:in `destroy'
+Redirected to http://localhost:3000/libraries
+Completed 302 Found in 143ms (ActiveRecord: 124.4ms | Allocations: 4769)
+
+
+Started GET "/libraries" for ::1 at 2021-11-14 11:58:27 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/libraries/index.html.erb:1
+  [1m[36mLibrary Load (0.2ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries"[0m
+  ↳ app/views/libraries/index.html.erb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/libraries/index.html.erb:15
+  Rendered libraries/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2342)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 141)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 6210)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.6ms | Allocations: 6716)
+
+
+Started GET "/users/edit" for ::1 at 2021-11-14 11:58:28 +0530
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 49.0ms | Allocations: 1969)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 96.3ms | Allocations: 5748)
+Completed 200 OK in 102ms (Views: 98.9ms | ActiveRecord: 0.2ms | Allocations: 7508)
+
+
+Started DELETE "/users" for ::1 at 2021-11-14 11:58:32 +0530
+Processing by Devise::RegistrationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (1.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (65.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 211ms (ActiveRecord: 67.3ms | Allocations: 7622)
+
+
+Started GET "/" for ::1 at 2021-11-14 11:58:32 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 171)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 54.6ms | Allocations: 4189)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.0ms | Allocations: 4772)
+
+
