@@ -10264,3 +10264,533 @@ Processing by LibrariesController#index as HTML
 Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms | Allocations: 4729)
 
 
+Started GET "/" for ::1 at 2021-11-14 13:22:13 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.3ms | Allocations: 621)
+  Rendered layout layouts/application.html.erb (Duration: 88.0ms | Allocations: 8948)
+Completed 200 OK in 111ms (Views: 96.0ms | ActiveRecord: 0.0ms | Allocations: 13785)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 13:22:18 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 49.7ms | Allocations: 681)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 952.3ms | Allocations: 5641)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 1001.3ms | Allocations: 9714)
+Completed 200 OK in 1094ms (Views: 1009.4ms | ActiveRecord: 0.7ms | Allocations: 16186)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-11-14 13:22:21 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 13.8ms | Allocations: 237)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 157)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 51.9ms | Allocations: 2091)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 96.2ms | Allocations: 6164)
+Completed 200 OK in 103ms (Views: 101.6ms | ActiveRecord: 0.0ms | Allocations: 7759)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 13:22:23 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 49.7ms | Allocations: 4908)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms | Allocations: 5700)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-11-14 13:22:26 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 106)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 4968)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.0ms | Allocations: 5599)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 13:22:26 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1047)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 4916)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.0ms | Allocations: 5615)
+
+
+Started GET "/libraries" for ::1 at 2021-11-14 13:22:27 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 3923)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms | Allocations: 4424)
+
+
+Started GET "/libraries" for ::1 at 2021-11-14 13:22:29 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 58.2ms | Allocations: 3923)
+Completed 200 OK in 64ms (Views: 62.3ms | ActiveRecord: 0.0ms | Allocations: 4420)
+
+
+Started GET "/libraries" for ::1 at 2021-11-14 13:24:20 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 60.2ms | Allocations: 7868)
+  Rendered layout layouts/application.html.erb (Duration: 61.3ms | Allocations: 7949)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.0ms | Allocations: 9385)
+
+
+  
+ActionView::Template::Error (undefined method `redirect_to' for #<ActionView::Base:0x00000000009218>):
+    31:   <%= link_to 'New Book', new_library_path ,class:"btn btn-secondary"%>
+    32: <%else%>
+    33: <p>Go sign up/in</p>
+    34: <% redirect_to new_user_registration_path%>
+    35: <%end%>
+  
+app/views/libraries/index.html.erb:34
+Started GET "/libraries" for ::1 at 2021-11-14 13:25:40 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 24.9ms | Allocations: 4456)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 4528)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 6011)
+
+
+  
+ActionView::Template::Error (undefined method `redirect_to' for #<ActionView::Base:0x000000000096f0>):
+    31:   <%= link_to 'New Book', new_library_path ,class:"btn btn-secondary"%>
+    32: <%else%>
+    33: <p>Go sign up/in</p>
+    34: <% redirect_to 'devise/registrations/new'%>
+    35: <%end%>
+  
+app/views/libraries/index.html.erb:34
+Started GET "/libraries" for ::1 at 2021-11-14 13:25:53 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 4070)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 4137)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 4669)
+
+
+  
+ActionView::Template::Error (undefined method `redirect_to' for #<ActionView::Base:0x00000000009ba0>):
+    31:   <%= link_to 'New Book', new_library_path ,class:"btn btn-secondary"%>
+    32: <%else%>
+    33: <p>Go sign up/in</p>
+    34: <% redirect_to 'devise/registrations/new'%>
+    35: <%end%>
+  
+app/views/libraries/index.html.erb:34
+Started GET "/libraries" for ::1 at 2021-11-14 13:25:55 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 476)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.4ms | Allocations: 551)
+  Rendered layout layouts/application.html.erb (Duration: 91.6ms | Allocations: 5301)
+Completed 200 OK in 100ms (Views: 98.2ms | ActiveRecord: 0.0ms | Allocations: 6758)
+
+
+Started GET "/libraries" for ::1 at 2021-11-14 13:26:00 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 3935)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms | Allocations: 4481)
+
+
+Started GET "/libraries" for ::1 at 2021-11-14 13:26:02 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 19.3ms | Allocations: 471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 547)
+  Rendered layout layouts/application.html.erb (Duration: 88.9ms | Allocations: 5277)
+Completed 200 OK in 97ms (Views: 94.7ms | ActiveRecord: 0.0ms | Allocations: 6740)
+
+
+Started GET "/libraries" for ::1 at 2021-11-14 13:29:39 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 29.5ms | Allocations: 4474)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 4546)
+Completed 500 Internal Server Error in 39ms (Allocations: 6005)
+
+
+  
+ActionView::Template::Error (undefined method `redirect_to' for #<ActionView::Base:0x0000000000a230>):
+    32: <%else%>
+    33: <p>Go sign up/in</p>
+    34: <%# <% redirect_to 'devise/registrations/new'%> 
+    35: <%redirect_to "/devise/registrations/new"%>
+    36: 
+    37: <%end%>
+  
+app/views/libraries/index.html.erb:35
+Started GET "/libraries" for ::1 at 2021-11-14 13:29:40 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 4070)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 4136)
+Completed 500 Internal Server Error in 10ms (Allocations: 4653)
+
+
+  
+ActionView::Template::Error (undefined method `redirect_to' for #<ActionView::Base:0x0000000000a690>):
+    32: <%else%>
+    33: <p>Go sign up/in</p>
+    34: <%# <% redirect_to 'devise/registrations/new'%> 
+    35: <%redirect_to "/devise/registrations/new"%>
+    36: 
+    37: <%end%>
+  
+app/views/libraries/index.html.erb:35
+Started GET "/libraries" for ::1 at 2021-11-14 13:29:41 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 4070)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4136)
+Completed 500 Internal Server Error in 16ms (Allocations: 4592)
+
+
+  
+ActionView::Template::Error (undefined method `redirect_to' for #<ActionView::Base:0x0000000000a988>):
+    32: <%else%>
+    33: <p>Go sign up/in</p>
+    34: <%# <% redirect_to 'devise/registrations/new'%> 
+    35: <%redirect_to "/devise/registrations/new"%>
+    36: 
+    37: <%end%>
+  
+app/views/libraries/index.html.erb:35
+Started GET "/libraries" for ::1 at 2021-11-14 13:29:42 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+  Rendered libraries/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 4070)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4136)
+Completed 500 Internal Server Error in 10ms (Allocations: 4592)
+
+
+  
+ActionView::Template::Error (undefined method `redirect_to' for #<ActionView::Base:0x0000000000ac80>):
+    32: <%else%>
+    33: <p>Go sign up/in</p>
+    34: <%# <% redirect_to 'devise/registrations/new'%> 
+    35: <%redirect_to "/devise/registrations/new"%>
+    36: 
+    37: <%end%>
+  
+app/views/libraries/index.html.erb:35
+Started GET "/libraries" for ::1 at 2021-11-14 13:30:50 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+Redirected to http://localhost:3000/users/sign_up
+  Rendered libraries/index.html.erb within layouts/application (Duration: 22.0ms | Allocations: 627)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.2ms | Allocations: 518)
+  Rendered layout layouts/application.html.erb (Duration: 86.6ms | Allocations: 5415)
+Completed 302 Found in 96ms (Views: 93.1ms | Allocations: 6862)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-11-14 13:30:51 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 228)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 488)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2467)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 86.3ms | Allocations: 6589)
+Completed 200 OK in 98ms (Views: 97.0ms | Allocations: 8340)
+
+
+Started GET "/libraries" for ::1 at 2021-11-14 13:30:54 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+Redirected to http://localhost:3000/users/sign_up
+  Rendered libraries/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 206)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 4009)
+Completed 302 Found in 53ms (Views: 52.0ms | Allocations: 4554)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-11-14 13:30:55 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 105)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1098)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 4980)
+Completed 200 OK in 52ms (Views: 50.9ms | Allocations: 5627)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 13:30:56 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 178)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1589)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 51.9ms | Allocations: 5700)
+Completed 200 OK in 60ms (Views: 58.6ms | Allocations: 7129)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-11-14 13:30:58 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 105)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 4968)
+Completed 200 OK in 54ms (Views: 53.0ms | Allocations: 5665)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 13:30:59 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1047)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 4913)
+Completed 200 OK in 52ms (Views: 50.9ms | Allocations: 5618)
+
+
+Started GET "/libraries/new" for ::1 at 2021-11-14 13:31:01 +0530
+Processing by LibrariesController#new as HTML
+Completed 401 Unauthorized in 1ms (Allocations: 253)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 13:31:01 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1047)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 48.8ms | Allocations: 4905)
+Completed 200 OK in 51ms (Views: 50.0ms | Allocations: 5608)
+
+
+Started GET "/libraries/new" for ::1 at 2021-11-14 13:31:03 +0530
+Processing by LibrariesController#new as HTML
+Completed 401 Unauthorized in 1ms (Allocations: 250)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 13:31:03 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1047)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 4902)
+Completed 200 OK in 50ms (Views: 48.6ms | Allocations: 5605)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-11-14 13:31:05 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 105)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1098)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 4953)
+Completed 200 OK in 64ms (Views: 62.7ms | Allocations: 5582)
+
+
+Started GET "/libraries/new" for ::1 at 2021-11-14 13:31:07 +0530
+Processing by LibrariesController#new as HTML
+Completed 401 Unauthorized in 1ms (Allocations: 250)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 13:31:07 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1047)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 45.4ms | Allocations: 4916)
+Completed 200 OK in 48ms (Views: 46.7ms | Allocations: 5621)
+
+
+Started GET "/libraries/new" for ::1 at 2021-11-14 13:31:29 +0530
+Processing by LibrariesController#new as HTML
+Completed 401 Unauthorized in 1ms (Allocations: 250)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 13:31:29 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 552)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 551)
+  Rendered layout layouts/application.html.erb (Duration: 52.9ms | Allocations: 6911)
+Completed 200 OK in 64ms (Views: 62.7ms | Allocations: 8912)
+
+
+Started GET "/" for ::1 at 2021-11-14 13:31:33 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+Redirected to http://localhost:3000/users/sign_in
+  Rendered libraries/index.html.erb within layouts/application (Duration: 21.0ms | Allocations: 594)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 198)
+  Rendered layout layouts/application.html.erb (Duration: 84.0ms | Allocations: 4667)
+Completed 302 Found in 94ms (Views: 90.8ms | Allocations: 5926)
+
+
+Started GET "/" for ::1 at 2021-11-14 13:31:33 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+Redirected to http://localhost:3000/users/sign_in
+  Rendered libraries/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 3986)
+Completed 302 Found in 54ms (Views: 53.0ms | Allocations: 4529)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 13:31:33 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 198)
+  Rendered layout layouts/application.html.erb (Duration: 54.1ms | Allocations: 4981)
+Completed 200 OK in 57ms (Views: 56.2ms | Allocations: 5697)
+
+
+Started GET "/libraries/new" for ::1 at 2021-11-14 13:31:36 +0530
+Processing by LibrariesController#new as HTML
+Completed 401 Unauthorized in 1ms (Allocations: 251)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 13:31:36 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1047)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 52.0ms | Allocations: 4914)
+Completed 200 OK in 54ms (Views: 53.4ms | Allocations: 5619)
+
+
+Started GET "/libraries" for ::1 at 2021-11-14 13:31:37 +0530
+Processing by LibrariesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering libraries/index.html.erb within layouts/application
+Redirected to http://localhost:3000/users/sign_in
+  Rendered libraries/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 54.5ms | Allocations: 4005)
+Completed 302 Found in 57ms (Views: 56.0ms | Allocations: 4500)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 13:31:37 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 153)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1047)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 4928)
+Completed 200 OK in 54ms (Views: 52.4ms | Allocations: 5630)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-11-14 13:31:38 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 115)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1966)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 236)
+  Rendered layout layouts/application.html.erb (Duration: 82.1ms | Allocations: 6083)
+Completed 200 OK in 89ms (Views: 88.1ms | Allocations: 7431)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-14 13:31:39 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 4917)
+Completed 200 OK in 54ms (Views: 52.6ms | Allocations: 5691)
+
+

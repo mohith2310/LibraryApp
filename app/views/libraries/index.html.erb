@@ -30,5 +30,5 @@
 
   <%= link_to 'New Book', new_library_path ,class:"btn btn-secondary"%>
 <%else%>
-<p>Go sign up/in</p>
+  <%controller.redirect_to new_user_session_path%>
 <%end%>
